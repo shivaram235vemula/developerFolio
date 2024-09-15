@@ -55,9 +55,6 @@ const skillsSection = {
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
     {
       skillName: "aws",
@@ -102,7 +99,6 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Your University",
-      logo: require("./assets/images/yourUniversityLogo.png"),
       subHeader: "Your Degree",
       duration: "Month Year - Month Year",
       desc: "Your academic achievements and activities.",
@@ -140,7 +136,6 @@ const workExperiences = {
     {
       role: "DevOps Engineer",
       company: "Accenture",
-      companylogo: require("./assets/images/accentureLogo.png"),
       date: "Feb 2022 – Present",
       desc: "Working on automating infrastructure, managing CI/CD pipelines, and container orchestration across AWS environments.",
       descBullets: [
@@ -151,8 +146,6 @@ const workExperiences = {
     }
   ]
 };
-
-// Other sections remain unchanged unless you want to add details there
 
 export {
   illustration,
