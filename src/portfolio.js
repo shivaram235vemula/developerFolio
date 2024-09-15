@@ -151,32 +151,6 @@ const workExperiences = {
 
 const isHireable = false; // Set false if you are not looking for a job
 
-// Contact Info Section
-
-const contactInfo = {
-  title: "Contact Me",
-  subtitle: "Let's connect for opportunities or collaborations!",
-  phone: "+1234567890", // Replace with your contact number
-  email: "shivaram235vemula@gmail.com",
-  display: true // Set false to hide this section
-};
-
-// Open Source Section
-
-const openSource = {
-  title: "Open Source Contributions",
-  subtitle: "Contributing to various open source projects and communities.",
-  display: true, // Set false to hide this section
-  contributions: [
-    {
-      project: "Project Name",
-      link: "https://github.com/yourusername/project",
-      description: "Brief description of your contribution."
-    }
-    // Add more contributions as needed
-  ]
-};
-
 export {
   illustration,
   greeting,
@@ -186,7 +160,5 @@ export {
   educationInfo,
   techStack,
   workExperiences,
-  isHireable,
-  contactInfo,
-  openSource
+  isHireable
 };
