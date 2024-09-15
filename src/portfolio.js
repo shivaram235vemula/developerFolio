@@ -161,6 +161,22 @@ const contactInfo = {
   display: true // Set false to hide this section
 };
 
+// Open Source Section
+
+const openSource = {
+  title: "Open Source Contributions",
+  subtitle: "Contributing to various open source projects and communities.",
+  display: true, // Set false to hide this section
+  contributions: [
+    {
+      project: "Project Name",
+      link: "https://github.com/yourusername/project",
+      description: "Brief description of your contribution."
+    }
+    // Add more contributions as needed
+  ]
+};
+
 export {
   illustration,
   greeting,
@@ -171,5 +187,6 @@ export {
   techStack,
   workExperiences,
   isHireable,
-  contactInfo
+  contactInfo,
+  openSource
 };
