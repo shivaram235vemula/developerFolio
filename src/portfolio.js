@@ -1,16 +1,16 @@
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation";
+import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
-// Splash Screen Configuration
+// Splash Screen
 const splashScreen = {
-  enabled: true,
+  enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000
+  duration: 2000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
 const illustration = {
-  animated: true
+  animated: true // Set to false to use static SVG
 };
 
 const greeting = {
@@ -19,8 +19,8 @@ const greeting = {
   subTitle: emoji(
     "An AWS DevOps Engineer 🚀 with expertise in Cloud automation, DevOps processes, container orchestration, and over 3 years of experience in the Banking domain."
   ),
-  resumeLink: "https://docs.google.com/document/d/1bfe_5CZr0YowwlgnfVVcJhKkBl6jtfmk/edit?usp=drive_link&ouid=114822685295115625864&rtpof=true&sd=true",
-  displayGreeting: true
+  resumeLink: "https://docs.google.com/document/d/1bfe_5CZr0YowwlgnfVVcJhKkBl6jtfmk/edit?usp=drive_link&ouid=114822685295115625864&rtpof=true&sd=true", // Set to empty to hide the button
+  displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
@@ -29,17 +29,17 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/shivaramakrishna-yemula-572971141",
   gmail: "shivaram235vemula@gmail.com",
   hashnode: "https://shivaramkrishna.hashnode.dev/",
-  display: true
+  display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY AWS DEVOPS ENGINEER WHO LOVES TO EXPLORE NEW TECH STACKS",
+  subTitle: "CRAZY AWS DEVOPS ENGINEER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji("⚡ Skilled in automating infrastructure provisioning and configuration management using AWS, Terraform, and Ansible"),
-    emoji("⚡ Hands-on expertise in managing Kubernetes (EKS) clusters, Docker, and CI/CD pipelines via Jenkins and GitLab"),
-    emoji("⚡ Proficient in cloud-based deployment, monitoring, and troubleshooting, with a strong focus on microservices and containerization across AWS environments")
+    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
+    emoji("⚡ Cloud infrastructure automation with AWS, Terraform, and Ansible"),
+    emoji("⚡ Containerization and orchestration with Docker and Kubernetes (EKS)")
   ],
   softwareSkills: [
     { skillName: "aws", fontAwesomeClassname: "fab fa-aws" },
@@ -51,41 +51,54 @@ const skillsSection = {
     { skillName: "jenkins", fontAwesomeClassname: "fas fa-robot" },
     { skillName: "grafana", fontAwesomeClassname: "fas fa-chart-line" }
   ],
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
 const educationInfo = {
-  display: true,
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "Your University",
+      logo: require("./assets/images/yourUniversityLogo.png"),
       subHeader: "Your Degree",
       duration: "Month Year - Month Year",
       desc: "Your academic achievements and activities.",
-      descBullets: ["Your key accomplishments"]
+      descBullets: [
+        "Your key accomplishments"
+      ]
     }
   ]
 };
 
 // Tech Stack
 const techStack = {
-  viewSkillBars: true,
+  viewSkillBars: true, // Set it to true to show Proficiency Section
   experience: [
-    { Stack: "Cloud & Infrastructure Automation", progressPercentage: "90%" },
-    { Stack: "Containerization & Orchestration", progressPercentage: "85%" },
-    { Stack: "CI/CD & DevOps", progressPercentage: "80%" }
+    {
+      Stack: "Cloud & Infrastructure Automation", // Insert stack or technology you have experience in
+      progressPercentage: "90%" // Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Containerization & Orchestration",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "CI/CD & DevOps",
+      progressPercentage: "80%"
+    }
   ],
-  displayCodersrank: false
+  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work Experience Section
 const workExperiences = {
-  display: true,
+  display: true, // Set it to true to show workExperiences Section
   experience: [
     {
       role: "DevOps Engineer",
       company: "Accenture",
+      companylogo: require("./assets/images/accentureLogo.png"),
       date: "Feb 2022 – Present",
       desc: "Working on automating infrastructure, managing CI/CD pipelines, and container orchestration across AWS environments.",
       descBullets: [
@@ -99,8 +112,8 @@ const workExperiences = {
 
 // Open Source Section
 const openSource = {
-  showGithubProfile: "true",
-  display: true
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Big Projects Section
@@ -112,16 +125,20 @@ const bigProjects = {
       image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Saayahealth",
       projectDesc: "A health management platform with a focus on user-friendly features and reliable performance.",
-      footerLink: [{ name: "Visit Website", url: "http://saayahealth.com/" }]
+      footerLink: [
+        { name: "Visit Website", url: "http://saayahealth.com/" }
+      ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
       projectName: "Nextu",
       projectDesc: "A digital learning platform aimed at enhancing educational experiences.",
-      footerLink: [{ name: "Visit Website", url: "http://nextu.se/" }]
+      footerLink: [
+        { name: "Visit Website", url: "http://nextu.se/" }
+      ]
     }
   ],
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -145,7 +162,9 @@ const achievementSection = {
       subtitle: "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices worldwide.",
       image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "Google Assistant Action Logo",
-      footerLink: [{ name: "View Google Assistant Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }]
+      footerLink: [
+        { name: "View Google Assistant Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }
+      ]
     },
     {
       title: "PWA Web App Developer",
@@ -158,14 +177,14 @@ const achievementSection = {
       ]
     }
   ],
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
 const blogSection = {
   title: "Blogs",
   subtitle: "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true",
+  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
@@ -178,7 +197,7 @@ const blogSection = {
       description: "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -193,7 +212,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -203,14 +222,48 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
-// Contact Info
+const contactInfo = {
+  title: emoji("Contact Me ☎️"),
+  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  number: "+92-0000000000",
+  email_address: "shivaram235vemula@gmail.com"
+};
+
+// Twitter Section
+const twitterDetails = {
+  userName: "twitter", // Replace "twitter" with your twitter username without @
+  display: true // Set true to display this section, defaults to false
+};
+
+const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be displayed as Open for opportunities: Yes/No in the GitHub footer
+
+export {
+  illustration,
+  greeting,
+  socialMediaLinks,
+  splashScreen,
+  skillsSection,
+  educationInfo,
+  techStack,
+  workExperiences,
+  openSource,
+  bigProjects,
+  achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
+  contactInfo,
+  twitterDetails,
+  isHireable,
+  resumeSection
+};
