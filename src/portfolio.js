@@ -1,6 +1,6 @@
 /* Change this file to get your personal Portfolio */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
+// To change portfolio colors globally go to the _globalColor.scss file
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
@@ -110,11 +110,11 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true, // Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Cloud & Infrastructure Automation",
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "90%" // Insert relative proficiency in percentage
     },
     {
       Stack: "Containerization & Orchestration",
@@ -131,7 +131,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, // Set it to true to show workExperiences Section
   experience: [
     {
       role: "DevOps Engineer",
@@ -151,6 +151,16 @@ const workExperiences = {
 
 const isHireable = false; // Set false if you are not looking for a job
 
+// Contact Info Section
+
+const contactInfo = {
+  title: "Contact Me",
+  subtitle: "Let's connect for opportunities or collaborations!",
+  phone: "+1234567890", // Replace with your contact number
+  email: "shivaram235vemula@gmail.com",
+  display: true // Set false to hide this section
+};
+
 export {
   illustration,
   greeting,
@@ -160,5 +170,6 @@ export {
   educationInfo,
   techStack,
   workExperiences,
-  isHireable
+  isHireable,
+  contactInfo
 };
