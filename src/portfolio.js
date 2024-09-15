@@ -44,7 +44,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY AWS DEVOPS WHO LOVES TO EXPLORE NEW TECH STACKS",
+  subTitle: "CRAZY AWS DEVOPS ENGINEER WHO LOVES TO EXPLORE NEW TECH STACKS",
   skills: [
     emoji(
       "⚡ Skilled in automating infrastructure provisioning and configuration management using AWS, Terraform, and Ansible"
@@ -147,6 +147,10 @@ const workExperiences = {
   ]
 };
 
+// Is Hireable Section
+
+const isHireable = false; // Set false if you are not looking for a job
+
 export {
   illustration,
   greeting,
@@ -155,5 +159,6 @@ export {
   skillsSection,
   educationInfo,
   techStack,
-  workExperiences
+  workExperiences,
+  isHireable
 };
