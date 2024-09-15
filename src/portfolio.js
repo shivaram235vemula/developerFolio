@@ -60,7 +60,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Your University",
-      logo: require("./assets/images/yourUniversityLogo.png"),
+      logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Your Degree",
       duration: "Month Year - Month Year",
       desc: "Your academic achievements and activities.",
@@ -98,7 +98,7 @@ const workExperiences = {
     {
       role: "DevOps Engineer",
       company: "Accenture",
-      companylogo: require("./assets/images/accentureLogo.png"),
+      companylogo: require("./assets/images/harvardLogo.png"),
       date: "Feb 2022 – Present",
       desc: "Working on automating infrastructure, managing CI/CD pipelines, and container orchestration across AWS environments.",
       descBullets: [
